@@ -2,6 +2,7 @@
 
 /**
  * _islower- checks for lowercase characters
+ * @c: is the var used for the function
  * Return: 0
  */
 int _islower(int c)
