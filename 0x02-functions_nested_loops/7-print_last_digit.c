@@ -5,7 +5,7 @@
  * @i: is the variable used with functionfunction
  * Return: 0
  */
-int print_last_digit(int i);
+int print_last_digit(int i)
 {
 	if (i >= 10 || i <= -10)
 	{
