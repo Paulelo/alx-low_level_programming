@@ -5,9 +5,17 @@
 /**
 * _strlen - function that returns the length of a string.
 * @s: is a pointer variable
-* Return: 0
+* Return: count
 */
 int _strlen(char *s)
 {
-	strlen(s);
+	int count = 0;
+
+	while(*s != '\0')
+	{
+		count++;
+		s++;
+	}
+
+	return (count);
 }
