@@ -3,16 +3,15 @@
 /**
 * _puts - prints a string followed by a new line
 * @str: is the pointer variable used in the function
-* Return: 0
+* On success: returns no error
 */
 void _puts(char *str)
 {
-	while (*str != '\0')
+	int i = 0;
+	while (*(str+i) != '\0')
 	{
-		_putchar(char *str);
-		str++;
+		_putchar(*(str+i));
+		i++;
 	}
-	_putchar('\n');
-
-	return (0);
+	_putchar(10);
 }
