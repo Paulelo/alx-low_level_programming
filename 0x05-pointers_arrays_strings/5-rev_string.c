@@ -4,7 +4,7 @@
 /**
 * rev_string - print a string in reverse
 * @s: is variable used to point to the string
-* On success: return nothing
+* On success: return 0
 */
 void rev_string(char *s)
 {
@@ -15,5 +15,5 @@ void rev_string(char *s)
 		_putchar(*(s + len));
 	}
 
-	return (10);
+	return (0);
 }
