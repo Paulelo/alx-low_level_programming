@@ -8,7 +8,12 @@
 */
 void rev_string(char *s)
 {
-	int i = 5000;
+	char p;
+	int i;
+
+	*s = s;
+	p = *s;
+	i = strlen(p);
 
 	while (i--)
 	{
