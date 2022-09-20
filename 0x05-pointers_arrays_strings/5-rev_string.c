@@ -10,7 +10,7 @@ void rev_string(char *s)
 {
 	int len = strlen(s)
 
-	while (i--)
+	while (len--)
 	{
 		_putchar(*(s + len));
 	}
