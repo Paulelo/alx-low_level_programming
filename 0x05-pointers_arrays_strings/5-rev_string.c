@@ -4,14 +4,15 @@
 /**
 * rev_string - print a string in reverse
 * @s: is variable used to point to the string
-* On success: return 0
+* On success: returns nothing
 */
 void rev_string(char *s)
 {
-	int l = 11;
+	char s[5000];
+	int i = 5000;
 
-	while (l--)
+	while (i--)
 	{
-		_putchar(*(s + l));
+		_putchar(*(s + i));
 	}
 }
