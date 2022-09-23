@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* * cap_string - Capitalizes all inputs
+* *cap_string - Capitalizes all inputs
 * @l: is variable holding string to be capitalized
 * Return: l
 */
@@ -18,7 +18,9 @@ char *cap_string(char *l)
 		while (i < len)
 		{
 			if ((a == 0 || l[a - 1] == car[i]) && (l[a] >= 97 && l[a] >= 122))
+			{
 				l[a] = l[a] - 32;
+			}
 			i++;
 		}
 		a++;
