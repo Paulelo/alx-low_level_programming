@@ -9,7 +9,7 @@ char *cap_string(char *l)
 {
 	char car[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
-	len = 13;
+	int len = 13;
 	int a = 0, i;
 
 	while (l[a])
