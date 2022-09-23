@@ -3,7 +3,7 @@
 /**
 * * cap_string - Capitalizes all inputs
 * @l: is variable holding string to be capitalized
-* Return: x
+* Return: l
 */
 char *cap_string(char *l)
 {
@@ -23,5 +23,5 @@ char *cap_string(char *l)
 		}
 		a++;
 	}
-	return (x);
+	return (l);
 }
