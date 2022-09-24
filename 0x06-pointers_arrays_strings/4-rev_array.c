@@ -1,25 +1,18 @@
 #include "main.h"
 
 /**
-* reverse_array - reverses an array of integers
-* @a: first param
-* @n: second param
-* Return: reverse array of int
+* reverse_array - Reverses the content of an array of integers.
+* @a: The array of integers to be reversed.
+* @n: The number of elements in the array.
 */
 void reverse_array(int *a, int n)
 {
-	int *p, i, rev, k;
+	int tmp, index;
 
-	p = a;
-
-	for (i = 0 ; i < n ; i++)
-		p++;
-	for (k = 0 ; k < n / 2 ; k++)
-	{
-		rev = a[k];
-		a[k] = *p;
-		*p = rev;
-		p--;
-	}
-	a[k + 1] = '\0';
+		for (index = n - 1; index >= n / 2; index--)
+		{
+			tmp = a[n - 1 - index];
+			a[n - 1 - index] = a[index];
+			a[index] = tmp;
+		}
 }
