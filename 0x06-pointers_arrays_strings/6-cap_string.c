@@ -1,29 +1,35 @@
-#include "main.h"
+#include "main.h" 
 
 /**
-* *cap_string - Capitalizes all inputs
-* @l: is variable holding string to be capitalized
-* Return: l
-*/
-char *cap_string(char *l)
+ * cap_string - Capitalizes all words of a str
+ * @str: The string to be capitalized.
+ *
+ * Return: A pointer to the changed string.
+ */
+char *cap_string(char *str)
 {
-	char car[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+        int index = 0; 
 
-	int len = 13;
-	int a = 0, i;
-
-	while (l[a])
-	{
-		i = 0;
-		while (i < len)
-		{
-			if ((a == 0 || l[a - 1] == car[i]) && (l[a] >= 97 && l[a] >= 122))
-			{
-				l[a] = l[a] - 32;
-			}
-			i++;
-		}
-		a++;
-	}
-	return (l);
+        while (str[index])
+        {
+                while (!(str[index] >= 'a' && str[index] <= 'z'))
+                        index++;
+                if (str[index - 1] == ' ' ||
+                    str[index - 1] == '\t' ||
+                    str[index - 1] == '\n' ||
+                    str[index - 1] == ',' ||
+                    str[index - 1] == ';' ||
+                    str[index - 1] == '.' ||
+                    str[index - 1] == '!' ||
+                    str[index - 1] == '?' ||
+                    str[index - 1] == '"' ||
+                    str[index - 1] == '(' ||
+                    str[index - 1] == ')' ||
+                    str[index - 1] == '{' ||
+                    str[index - 1] == '}' ||
+                    index == 0)
+                        str[index] -= 32;
+                index++;
+        }
+        return (str);
 }
