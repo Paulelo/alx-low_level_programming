@@ -6,7 +6,7 @@
 * @s: is a pointer
 * @b: is the value
 * @n: is the number of times
-* Return: 0 on success
+* Return: pointer on success
 */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -16,5 +16,5 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		s[a] = b;
 	}
-	return (0);
+	return (s);
 }
