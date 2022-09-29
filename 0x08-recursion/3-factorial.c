@@ -3,7 +3,7 @@
 /**
 * factorial - prints the factorial of any number
 * @n: nuber whose fatorial is to be printed
-* Return:
+* Return: result
 */
 int factorial(int n)
 {
@@ -15,7 +15,7 @@ int factorial(int n)
 	}
 	else if (n == 0)
 	{
-		return(1);
+		return (1);
 	}
 	result = n * factorial(n - 1);
 	return (result);
