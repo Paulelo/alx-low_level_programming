@@ -4,7 +4,8 @@
 /**
 * main - adds all positive int argument passed to the programme
 * @argc: counts all arguments passed to the programme
-* @argv: is an arry of char that holds value of all arguments passed to programme
+* @argv: is an arry of char that holds value of
+* all arguments passed to programme
 * Return: onsuccess 0
 */
 int main(int argc, char *argv[])
