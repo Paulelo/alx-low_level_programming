@@ -1,0 +1,1 @@
+In this directory we are dealling with dynamic memory allocation, basically using the malloc function to dynamically allocate memory and the free function to release dynamically allocate memory, after programe returns, future use.
