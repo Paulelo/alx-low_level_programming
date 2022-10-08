@@ -9,13 +9,13 @@ int main(void)
 {
 	int l, m, n, o;
 
-	for (l = 47 ; l <= 57 ; l++)
+	for (l = 48 ; l <= 57 ; l++)
 	{
-		for (m = 47 ; m <= 57 ; m++)
+		for (m = 48 ; m <= 57 ; m++)
 		{
-			for (n = 47 ; n <= 57 ; n++)
+			for (n = 48 ; n <= 57 ; n++)
 			{
-				for (o = 47 ; o <= 57 ; o++)
+				for (o = 48 ; o <= 57 ; o++)
 				{
 				if (((n + o) > (l + m) && n >= l) || l < n)
 				{
@@ -43,5 +43,3 @@ int main(void)
 
 	return (0);
 }
-	
-
