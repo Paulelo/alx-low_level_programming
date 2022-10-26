@@ -11,7 +11,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 {
 	struct listint_s *temp;
 
-	while (head)
+	while (*temp != NULL)
 	{
 	temp = malloc(sizeof(listint_t));
 	temp->n = n;
