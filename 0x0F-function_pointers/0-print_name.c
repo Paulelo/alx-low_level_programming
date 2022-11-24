@@ -1,3 +1,4 @@
+
 #include "function_pointers.h"
 
 /**
@@ -11,6 +12,8 @@ void print_name(char *name, void (*f)(char *))
 	char **point;
 
 	point = &name;
+	if(*f(NULL))
+		exit (0);
 	(*f)(*point);
 }
 
